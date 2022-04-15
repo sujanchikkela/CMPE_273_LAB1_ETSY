@@ -1,6 +1,7 @@
 var rpc = new (require("./kafkarpc"))();
 
 //make request to kafka
+//Need to change the connection of kafka in database
 function make_request(queue_name, msg_payload, callback) {
   console.log("in make request");
   console.log(msg_payload);
