@@ -1,6 +1,7 @@
 var kafka = require("kafka-node");
 function ConnectionProvider() {
   this.getConsumer = function (topic_name) {
+    //Making connection to the localhost
     // if (!this.kafkaConsumerConnection) {
     this.client = new kafka.KafkaClient(`localhost:2181`);
     //this.client = new kafka.Client("localhost:2181");
