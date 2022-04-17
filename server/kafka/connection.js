@@ -15,6 +15,8 @@ function ConnectionProvider() {
     ]);
     this.client.on("ready", function () {
       console.log("client ready!");
+      console.log("Kafka Started");
+      /* displaying client ready on console*/
     });
     // }
     return this.kafkaConsumerConnection;
