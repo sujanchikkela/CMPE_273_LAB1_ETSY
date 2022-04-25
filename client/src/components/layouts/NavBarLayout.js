@@ -75,7 +75,7 @@ const NavBarLayout = props => {
           <Navbar.Collapse id="navbarScroll">
 
             <Col sm={5}>
-              <Form className="d-flex" style={{ width: "100%" }}>
+              <Form variant="outline-dark" className="d-flex" style={{ width: "100%" }}>
                 <FormControl
                   type="search"
                   variant="outline-secondary"

@@ -36,7 +36,7 @@ const ItemOverview = () => {
             window.localStorage.setItem('cart',window.localStorage.getItem('cart')+1)
             toast('Item added to your Cart!')
         } catch (error) {
-            toast('Failed to add to Cart')
+            toast.dark('Failed to add to Cart')
         }
     }
 
@@ -50,10 +50,10 @@ const ItemOverview = () => {
             const res = await axios.post(constants.uri+'/order/add-to-cart',{productId,userId,quantity,price})
             console.log(window.localStorage.getItem('cart'))
             window.localStorage.setItem('cart',window.localStorage.getItem('cart')+1)
-            toast('Item added to your Cart!')
+            toast.dark('Item added to your Cart!')
             setBuyNowENabled(true)
         } catch (error) {
-            toast('Failed to add to Cart')
+            toast.dark('Failed to add to Cart')
         }
     }
 

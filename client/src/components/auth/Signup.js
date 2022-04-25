@@ -53,7 +53,7 @@ const Signup = ({ showModal, setShowModal }) => {
             if (res.status === 200) {
                 window.localStorage.setItem("userdetails",res.data.token)
                 setShowModal(false)
-                toast.success("Registered",{
+                toast.dark("Registered",{
                     position: "top-center",
                 })
                 setLoggedIn(true)
@@ -72,7 +72,7 @@ const Signup = ({ showModal, setShowModal }) => {
             if(res.status === 200 ){
                 window.localStorage.setItem("userdetails",res.data.token)
                 setShowModal(false)
-                toast.success("Loggedin", {
+                toast.dark("Loggedin", {
                     position: "top-center",
                 })
                 setLoggedIn(true)
@@ -80,7 +80,7 @@ const Signup = ({ showModal, setShowModal }) => {
             }
         } catch (error) {
             setShowModal(false)
-            toast("Sorry, Try again",{position:"top-center"})
+            toast.dark("Sorry, Try again",{position:"top-center"})
         }
     }
 

@@ -108,7 +108,7 @@ const EditItem = ({ editItem, setEditItem, item }) => {
                                     <Form.Group className="mb-3">
                                         <Form.Select onChange={(e) => onChangeCategoryData(e)}>
                                             <option value="Clothing" selected={editFormData.category === "Clothing" ? true : false }>Clothing</option>
-                                            <option value="Jewellery" selected={editFormData.category === "Jewellery" ? true : false }>Jewelley</option>
+                                            <option value="Jewellery" selected={editFormData.category === "Jewellery" ? true : false }>jewellery</option>
                                             <option value="Entertainment" selected={editFormData.category === "Entertainment" ? true : false }>Entertainment</option>
                                             <option value="Home Decor" selected={editFormData.category === "Home Decor" ? true : false }>Home Decor</option>
                                             <option value="Art" selected={editFormData.category === "Art" ? true : false }>Art</option>

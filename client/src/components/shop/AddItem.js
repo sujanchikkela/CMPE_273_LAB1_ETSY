@@ -134,7 +134,7 @@ const AddItem = ({ addItem, setAddItem, sellerId, shop }) => {
                                 <Form.Group className="mb-3">
                                     <Form.Select onChange={(e) => onChangeCategoryData(e)}>
                                         <option value="Clothing">Clothing</option>
-                                        <option value="Jewelley">Jewelley</option>
+                                        <option value="jewellery">jewellery</option>
                                         <option value="Entertainment">Entertainment</option>
                                         <option value="Home Decor">Home Decor</option>
                                         <option value="Art">Art</option>

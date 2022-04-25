@@ -61,7 +61,7 @@ const ApplyFilters = ({ showApplyFilter, setShowApplyFilter, filters, setFilters
                         <Form>
                             <Form.Check type='radio' label='All' onClick={(e) => { getCategoryValue(e) }} value="All" />
                             <Form.Check type='radio' label='Clothing' onClick={(e) => { getCategoryValue(e) }} value="Clothing" />
-                            <Form.Check type='radio' label='Jewelry' onClick={(e) => getCategoryValue(e)} value="Jewelry" />
+                            <Form.Check type='radio' label='jewellery' onClick={(e) => getCategoryValue(e)} value="jewellery" />
                             <Form.Check type='radio' label='Entertainment' onClick={(e) => getCategoryValue(e)} value="Entertainment" />
                             <Form.Check type='radio' label='Art' onClick={(e) => getCategoryValue(e)} value="Art" />
                             <Form.Check type='radio' label='Home Decor' onClick={(e) => getCategoryValue(e)} value="Home Decor" />

@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import { Card, Row, Col, Image, Button, OverlayTrigger, Tooltip } from 'react-bootstrap'
 import clothing from './../../images/clothing.jpg'
-import jewelry from './../../images/jewelry.jpg'
+import jewellery from './../../images/jewellery.jpg'
 import homedecor from './../../images/homedecor.jpg'
 import art from './../../images/art.jpg'
 import entertainment from './../../images/entertainment.jpg'
@@ -133,11 +133,11 @@ const Dashboard = () => {
                             </Link>
                         </Col>
                         <Col sm={2}>
-                            <Link to="/products/Jewelery" style={{ textDecoration: 'none', color: 'black' }}>
+                            <Link to="/products/jewellery" style={{ textDecoration: 'none', color: 'black' }}>
                                 <Row>
-                                    <Image roundedCircle width={150} height={200} src={jewelry} />
+                                    <Image roundedCircle width={150} height={200} src={jewellery} />
                                 </Row>
-                                <Row><h6 style={{ textAlign: 'center' }}>Jewelery</h6></Row>
+                                <Row><h6 style={{ textAlign: 'center' }}>Jewellery</h6></Row>
                             </Link>
                         </Col>
                         <Col sm={2}>
