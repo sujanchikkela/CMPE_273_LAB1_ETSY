@@ -19,13 +19,13 @@ module.exports = class KafkaRequestResponse {
 
         this.requests[correlationId] = entry
 
-        console.log("2. CorrelationId and requests entry ...")
+        console.log("CorrelationId :" ,correlationId)
         this.kafkaResponse(function(){
             producer.on('ready',function() {
                 let payloads = [
                     {topic: topicName,messages: JSON.stringify({payload,correlationId}),partition:0}
                 ]
-                console.log("3. Producer sending data ...",payloads)
+                console.log("3. Producer sending data ...")
                 producer.send(payloads,function(err,data){
                     console.log("ERR ",err)
                     console.log("DATA ",data)
@@ -36,9 +36,9 @@ module.exports = class KafkaRequestResponse {
 
     kafkaResponse(next){
         let requestsWaiting = this.requests
-        console.log("Requests Waiting: ",requestsWaiting)
+        
         this.consumer.on('message', function (message) {
-            console.log("Acknowledgement recieved :",message)
+            console.log("Response recieved :",message)
 
             var acknowledgementData = JSON.parse(message.value)
             var correlationId = acknowledgementData.payload.correlationId
